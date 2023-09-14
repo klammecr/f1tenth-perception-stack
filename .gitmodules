@@ -1,0 +1,3 @@
+[submodule "f1tenth_abs"]
+	path = f1tenth_abs
+	url = git@github.com:klammecr/f1tenth_abs.git
