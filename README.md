@@ -5,5 +5,5 @@
  | Lab    | Location |
 | -------- | ------- |
 | Emergency Breaking | [f1tenth_abs](./f1tenth_abs/)    |
-| Wall Following | Not Finished    |
+| Wall Following | [f1tenth_wall_following](./f1tenth_wall_following/)   |
 | Follow the Gap    | Not Finished   |
