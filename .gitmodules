@@ -4,3 +4,6 @@
 [submodule "f1tenth_wall_following"]
 	path = f1tenth_wall_following
 	url = git@github.com:klammecr/f1tenth_wall_following.git
+[submodule "f1tenth_gym_ros"]
+	path = f1tenth_gym_ros
+	url = git@github.com:f1tenth-cmu/f1tenth_gym_ros.git
