@@ -9,4 +9,5 @@ rocker --nvidia --x11 \
 --volume f1tenth_gym_ros:/sim_ws/src/f1tenth_gym_ros \
 --volume f1tenth_abs/safety_node:/sim_ws/src/safety_node \
 --volume f1tenth_wall_following/wall_follow:/sim_ws/src/wall_follow \
--- f1tenth_sim
+--volume f1tenth_follow_the_gap/gap_follow:/sim_ws/src/gap_follow \
+-- f1tenth_gym_ros
