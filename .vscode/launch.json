@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pure Pursuit - Create Waypoints",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-m",
+                "f1tenth_pure_pursuit/aims7.pgm",
+                "-o",
+                "f1tenth_pure_pursuit",
+                "-a",
+                "f1tenth_pure_pursuit/keep1.txt"
+            ]
+        }
+    ]
+}
