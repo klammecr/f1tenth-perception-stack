@@ -6,7 +6,8 @@
 | -------- | ------- | -------------- |
 | Emergency Breaking | [f1tenth_abs](./f1tenth_abs/)    | Python |
 | Wall Following | [f1tenth_wall_following](./f1tenth_wall_following/)   | C++ |
-| Follow the Gap    | [f1tenth_gap_followint(./f1tenth_follow_the_gap)  | C++ |
+| Follow the Gap    | [f1tenth_gap_follow](./f1tenth_follow_the_gap)  | C++ |
+| Pure Pursuit | [f1tenth_pure_pursuit](./f1tenth_pure_pursuit/) | C++ |
 
 
 ## Entering into Simulation Environment
