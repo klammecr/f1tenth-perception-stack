@@ -10,9 +10,6 @@
 [submodule "f1tenth_follow_the_gap"]
 	path = f1tenth_follow_the_gap
 	url = https://github.com/klammecr/f1tenth_follow_the_gap
-[submodule "f1tenth_lab5"]
-	path = f1tenth_lab5
-	url = git@github.com:klammecr/f1tenth_lab5.git
 [submodule "f1tenth_pure_pursuit"]
 	path = f1tenth_pure_pursuit
 	url = git@github.com:klammecr/f1tenth_pure_pursuit.git
