@@ -11,4 +11,5 @@ rocker --nvidia --x11 \
 --volume f1tenth_wall_following/wall_follow:/sim_ws/src/wall_follow \
 --volume f1tenth_follow_the_gap/gap_follow:/sim_ws/src/gap_follow \
 --volume f1tenth_pure_pursuit/pure_pursuit:/sim_ws/src/pure_pursuit \
+--volume f1tenth_rrt/rrt:/sim_ws/src/rrt \
 -- f1tenth_gym_ros

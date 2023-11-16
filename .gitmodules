@@ -13,3 +13,9 @@
 [submodule "f1tenth_pure_pursuit"]
 	path = f1tenth_pure_pursuit
 	url = git@github.com:klammecr/f1tenth_pure_pursuit.git
+[submodule "f1tenth_rrt"]
+	path = f1tenth_rrt
+	url = git@github.com:klammecr/f1tenth_rrt.git
+[submodule "f1tenth_mpc"]
+	path = f1tenth_mpc
+	url = git@github.com:klammecr/f1tenth_mpc.git
