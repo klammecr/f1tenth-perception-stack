@@ -1,0 +1,3 @@
+waypoint_publisher_node:
+  ros__parameters:
+    waypoint_file: "/sim_ws/install/waypoint_publisher/share/waypoint_publisher/config/aims7_transformed.csv"
