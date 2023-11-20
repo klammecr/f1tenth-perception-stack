@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/media/cklammer/KlammerData/dev/f1tenth-perception-stack/.venv"
+set -gx VIRTUAL_ENV "/home/klammerc/dev/f1tenth-perception-stack/.venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

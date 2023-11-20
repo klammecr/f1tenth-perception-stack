@@ -1,8 +1,0 @@
-#!/media/cklammer/KlammerData/dev/f1tenth-perception-stack/.venv/bin/python
-# -*- coding: utf-8 -*-
-import re
-import sys
-from rocker.cli import detect_image_os
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(detect_image_os())

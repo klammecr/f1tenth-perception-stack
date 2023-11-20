@@ -1,4 +1,4 @@
-#!/media/cklammer/KlammerData/dev/f1tenth-perception-stack/.venv/bin/python
+#!/home/klammerc/dev/f1tenth-perception-stack/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

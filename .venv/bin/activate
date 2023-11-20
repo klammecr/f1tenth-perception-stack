@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/media/cklammer/KlammerData/dev/f1tenth-perception-stack/.venv"
+VIRTUAL_ENV="/home/klammerc/dev/f1tenth-perception-stack/.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
