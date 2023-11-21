@@ -49,21 +49,20 @@ if __name__ == "__main__":
         param_new = np.linspace(0, 1, 100)  # New parameter values
         x_ev, y_ev = scipy.interpolate.splev(param_new, coeff) # Use coefficients to generate a curve
 
-        pts = np.stack((x_ev, y_ev))
+        pts = np.stack((x_ev, y_ev)).astype("int")
         for x,y in pts.T.astype("int"):
             cv2.circle(map, (x,y), radius=3, color=(255,0,0))
 
         np.savetxt(f"{args.out_path}/annot_interp.txt", pts)
         cv2.imshow("Interpolated Spline Waypoints", map)
         cv2.waitKey()
-    else:
-        annot = np.loadtxt(args.annotations).astype("int")
-        filt_annot = np.array([a for a in annot.T if np.all(map[a[1], a[0]] > 205)])
 
+        filt_annot = np.array([a for a in pts.T if np.all(map[a[1], a[0]] > 205)])
 
         dist_last_waypt = 0
-        thresh = 15
-        annot = annot.T
+        thresh = 25
+        annot = filt_annot
+        print(annot.shape)
         waypts = [annot[0]]
         for i in range(1, annot.shape[0], 1):
             dist_last_waypt += np.linalg.norm(annot[i] - annot[i-1])

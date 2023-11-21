@@ -12,7 +12,7 @@ if __name__ == "__main__":
     parser.add_argument("-m", "--map_file", default="waypoint_creation/aims7.pgm")
     parser.add_argument("-w", "--waypoints", default="waypoint_creation/output/final_waypoints.txt")
     parser.add_argument("-y", "--yaml", default="waypoint_creation/aims7.yaml")
-    parser.add_argument("-v", "--velocity", default=2.0)
+    parser.add_argument("-v", "--velocity", default=3.0)
     args = parser.parse_args()
 
     # Read image
@@ -47,6 +47,8 @@ if __name__ == "__main__":
     
     # Set the desired yaw of each waypoint, just make it constant velocity for now
     yaws = np.zeros((out_pts.shape[0], 1))
+    prev_yaw = 0
+    velocity = np.zeros((out_pts.shape[0], 1))
     for i in range(0, out_pts.shape[0]-1):
         # Translation vector
         delta = out_pts[i+1] - out_pts[i]
@@ -54,9 +56,14 @@ if __name__ == "__main__":
         # Arctan of translation vector is theta
         yaws[i] = np.arctan2(delta[1], delta[0])
 
+        velocity[i] = 2.5
+
+        prev_yaw = yaws[i]
+
     # Finalize waypoints
-    final_waypts = np.hstack((out_pts, args.velocity * np.ones_like(yaws), yaws))
+    print(out_pts)
+    final_waypts = np.hstack((out_pts[:, :2], yaws, velocity))
 
     map_name = args.map_file.split("/")[-1]
-    np.savetxt(f"waypoint_creation/{map_name}_transformed.csv", final_waypts, delimiter=",")
+    np.savetxt(f"{map_name}_transformed.csv", final_waypts, delimiter=",")
     
